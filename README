@@ -1,0 +1,28 @@
+decimalToBinary.py
+    Simple python script that converts decimal number to binary representation
+
+lucas_lehmer_gmp.c
+    lucas lehmer implementation using the gmp library (Much, much faster than the Python implementation)
+
+    p=5000: 0.018 seconds
+
+lucas_lehmer_scratch.c
+    Lucas Lehmer implementation where the big int is implemented from scratch (Also much slower than the Python implementation)
+
+    p=5000: 0.773 seconds
+
+lucas_lehmer_with_karatsuba.c
+    Uses the lucas_lehmer_scratch implementation but replaces the multiplication computation with the Karatsuba algorithm
+
+    p=5000: TODO
+
+lucas_lehmer_boost.cpp
+    C++ Lucas Lehmer that uses boost's multiprecision library (much slower than the Python implementation)
+
+    p=5000: 0.627 seconds
+
+primeTestThingy.py
+    Python implementation of the Lucas Lehmer Algorithm (have been using this as a baseline time to aim for)
+
+    p=5000: 0.092 seconds
+
